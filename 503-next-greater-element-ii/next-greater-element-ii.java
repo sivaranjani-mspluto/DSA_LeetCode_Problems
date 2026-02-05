@@ -2,8 +2,7 @@ class Solution {
     public static int[] solution(int a[],int n) {
 		Stack<Integer> st= new Stack<>();
 		int res[] = new int[n];
-        int i=1;
-		for(i= 2*n-1 ;i>=0;i--) {
+		for(int i= 2*n-1 ;i>=0;i--) {
             int indx = i%n;
 			while(!st.isEmpty() && st.peek()<=a[indx]) {
 				st.pop();
