@@ -3,7 +3,7 @@ class Solution {
 		Stack<Integer> st= new Stack<>();
 		int res[] = new int[n];
         Arrays.fill(res,-1); // TO FILL ALL THE ELEMENTS IN THE ARRAY AS -1 
-		for(int i= 2*n ;i>=0;i--) {
+		for(int i= 2*n-1 ;i>=0;i--) {
             int indx = i%n;
 			while(!st.isEmpty() && st.peek()<=a[indx]) {
 				st.pop();
