@@ -24,7 +24,9 @@ class BSTIterator:
         return self.arr[self.pointer]
 
     def hasNext(self) -> bool:
-        return self.pointer+1 < len(self.arr)
+        if self.pointer+1 < len(self.arr):
+            return True
+        return False
         
 
 
