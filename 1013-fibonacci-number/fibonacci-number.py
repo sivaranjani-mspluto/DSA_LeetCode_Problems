@@ -1,5 +1,6 @@
 class Solution:
     def fib(self, n: int) -> int:
+        # not optimized 
         def fibo(n):
             if n==0:
                 return 0
